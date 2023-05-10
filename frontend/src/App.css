@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+:root
+{
+  --brown: #613836;
+  --darkerblue : #196e75;
+  --antiquewhite: #ffd600;
+  --greenbg: #C6F6D5;
+  --chakraGreen: #38a169;
+  --black : #2e1d1b;
+  --gray : #788097;
+  --blueCard : #DDF8FE;
+  --purple: rgb(238 210 255);
+  --white:#ffffff;
+  --red: #ff8a80; 
+  --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+  --orangeCard: rgba(252, 166, 31, 0.45);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+/* width */
+::-webkit-scrollbar 
+{
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track 
+{
+    box-shadow: inset 0 0 0px var(--brown);
+    border-radius: 10px;
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb 
+{
+    background: var(--brown);
+    border-radius: 0px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover 
+{
+    background: var(--brown);
+}
+body 
+{
+    position: relative;
+    z-index: 1; /* ensure the main contents appear above the background */
+}
+body:before
+{
+    background-image: url(https://cdn.shopify.com/s/files/1/1775/8583/t/1/assets/icon-seamless.png?v=161695949832246404391487575258);
+    content: "";
+    opacity: 0.5; /* adjust the opacity as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--greenbg);
+    z-index: -1; /* send the background behind the main contents */
+}
+.App {
+  min-height: 100vh;
+  display: flex;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.281);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.messages {
+    display: flex !important;
+    flex-direction: column !important;
+    overflow-y: scroll !important;
+    scrollbar-width: none !important;
+}
+/* @media screen and (min-width: 780px) {
+ .samplebox {
+    margin-right: 100px !important;
+ }
+} */
+
+
+
+/* .css-rf2x1j {
+  display: block !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+  align-items: flex-start !important;
+  padding: var(--chakra-space-3) !important;
+  background: #E8E8E8 !important;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: var(--chakra-radii-lg) !important;
+  overflow-y: scroll !important;
+  position: relative;
+} */
+
+
+
+
+
+
